@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trayecto Formativo en Habilidades Digitales · Instituto Inmaculada Concepción</title>
 <meta name="description" content="Trayecto Formativo en Habilidades Digitales para 4° y 5° año del nivel secundario. Bimodalidad, prácticas profesionales y certificación oficial con aval del SPEPM. Instituto Inmaculada Concepción, Posadas, Misiones.">
+<meta name="author" content="Prof. Vanessa E. Benitez">
+<meta name="creator" content="Prof. Vanessa E. Benitez">
+<meta name="publisher" content="Instituto Inmaculada Concepción">
+<meta property="og:title" content="Trayecto Formativo en Habilidades Digitales · Instituto Inmaculada Concepción">
+<meta property="og:description" content="Idea y diseño pedagógico: Prof. Vanessa E. Benitez. Trayecto bimodal para 4° y 5° año con certificación oficial avalada por el SPEPM.">
+<meta property="og:type" content="website">
 <meta name="theme-color" content="#1a2456">
 
 <style>
@@ -490,6 +496,11 @@ footer .slogan{
       <span class="marca">Trayecto Formativo · 4° y 5° año</span>
       <h1>Habilidades Digitales con certificación oficial en el secundario</h1>
       <p class="sub">Un trayecto bimodal para las tres orientaciones, con prácticas profesionales en 5° año y certificación con aval del SPEPM al finalizar el recorrido.</p>
+      <p style="display:inline-flex; align-items:center; gap:10px; margin-top:6px; font-size:.85rem; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22); padding:8px 16px; border-radius:999px; backdrop-filter:blur(6px);">
+        <span style="opacity:.75; font-weight:600; letter-spacing:.06em;">IDEA Y DISEÑO PEDAGÓGICO</span>
+        <span style="width:1px; height:14px; background:rgba(255,255,255,.35);"></span>
+        <strong style="color:#5eead4; font-weight:800; letter-spacing:.02em;">Prof. Vanessa E. Benitez</strong>
+      </p>
     </div>
 
     <div class="stats">
@@ -988,6 +999,9 @@ footer .slogan{
     <h3>Una respuesta concreta a la brecha formativa</h3>
     <p style="font-size:1rem; margin:0">El Trayecto Formativo en Habilidades Digitales no es un agregado al currículum. Es una respuesta concreta a la distancia entre la escuela secundaria y la economía digital misionera.</p>
     <p style="font-size:1rem; margin:14px 0 0; font-weight:600; color:var(--brand)">Formando constructores del bien común para la provincia de Misiones.</p>
+    <p style="font-size:.82rem; margin:22px 0 0; color:var(--ink-soft); border-top:1px dashed var(--line); padding-top:14px;">
+      Propuesta original concebida y desarrollada por la <strong style="color:var(--brand)">Prof. Vanessa E. Benitez</strong> para el Instituto Inmaculada Concepción.
+    </p>
   </div>
 </section>
 
@@ -998,7 +1012,13 @@ footer .slogan{
     <p class="firma">Instituto Inmaculada Concepción</p>
     <p>Posadas, Misiones · Argentina</p>
     <p class="slogan">"Formando constructores del bien común"</p>
-    <p style="opacity:.65; font-size:.78rem; margin-top:18px">Trayecto Formativo en Habilidades Digitales · 4° y 5° año · Certificación con aval del SPEPM</p>
+    <p style="margin-top:20px; font-size:.92rem; color:var(--ink);">
+      <strong>Idea y diseño pedagógico:</strong> Prof. Vanessa E. Benitez
+    </p>
+    <p style="opacity:.65; font-size:.78rem; margin-top:14px">
+      Trayecto Formativo en Habilidades Digitales · 4° y 5° año · Certificación con aval del SPEPM
+      <br>© <span id="year"></span> Instituto Inmaculada Concepción · Todos los derechos reservados.
+    </p>
   </div>
 </footer>
 
@@ -1018,6 +1038,8 @@ footer .slogan{
   window.addEventListener('beforeprint', function(){
     document.querySelectorAll('details').forEach(function(d){ d.open = true; });
   });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
 })();
 </script>
 
